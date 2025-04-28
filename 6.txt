@@ -1,0 +1,25 @@
+#6virtualization using kvm
+
+sudo apt update
+
+sudo apt upgrade -y
+
+sudo grep -c "svm\|vmx" /proc/cpuinfo
+
+kvm -ok
+
+sudo apt install cpu-checker
+
+sudo apt install qemu-kmv virt-manager libvirt-daemon-system libvirt-clients bridge-utils -y
+
+sudo systemctl enable libvirtd
+
+sudo systemctl start libvirtd
+
+sudo usermod -aG kvm vboxuser
+
+sudo usermod -aG libvirt vboxuser
+
+sudo systemctl status libvirtd
+
+reboot 

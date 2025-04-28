@@ -1,0 +1,4 @@
+ip addr show 
+
+
+ping {ip of pc 2} -c 5

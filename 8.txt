@@ -1,0 +1,28 @@
+8 one to another
+
+sender
+cd ~/Desktop
+scp file.txt username@ip:/home/username/Desktop
+
+ex
+scp /home/alex/Documents/important.txt john@192.168.1.10:/home/john/Desktop
+
+reciver
+
+
+sudo apt install openssh-server
+
+sudo service ssh start
+sudo apt install net-tools
+
+ifconfig
+
+sudo systemctl status ssh
+
+sudo systemctl start ssh
+
+sudo ufw status
+
+sudo ufw allow ssh
+
+
